@@ -16,12 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/ncheburet/Projects/webapp_security
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/ncheburet/Projects/webapp_security/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudC9BY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ncheburet/Projects/webapp_security/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ncheburet/Projects/webapp_security/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ncheburet/Projects/webapp_security/Pages/HumanResource.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSHVtYW5SZXNvdXJjZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ncheburet/Projects/webapp_security/Pages/Index.cshtml]
