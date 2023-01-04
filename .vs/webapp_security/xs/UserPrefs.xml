@@ -1,4 +1,35 @@
 ﻿<Properties StartupConfiguration="{19AB3B31-C1F8-47D9-8C21-5678347AFD43}|https" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.webapp__security PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="30" Column="11" />
+      <File FileName="Pages/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Index.cshtml.cs" Line="19" Column="1" />
+      <File FileName="Pages/Account/Login.cshtml.cs" Line="36" Column="76" />
+      <File FileName="Properties/launchSettings.json" Line="26" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="webapp_security" expanded="True">
+            <Node name="webapp_security" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Account" expanded="True">
+                  <Node name="Login.cshtml" expanded="True" />
+                </Node>
+                <Node name="Index.cshtml" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
