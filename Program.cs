@@ -1,4 +1,7 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.AspNetCore.Authorization;
+using webapp_security.Authorization;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddAuthentication().AddCookie("MyCookieAuth", opt =>
@@ -6,12 +9,20 @@ builder.Services.AddAuthentication().AddCookie("MyCookieAuth", opt =>
     opt.Cookie.Name = "MyCookieAuth";
     opt.LoginPath = "/Account/Login";
     opt.AccessDeniedPath = "/Account/AccessDenied";
+    opt.ExpireTimeSpan = TimeSpan.FromMinutes(2);
 });
 
 builder.Services.AddAuthorization(opt =>
 {
     opt.AddPolicy("MustBelongToHr", policy => policy.RequireClaim("Department", "HR"));
+    opt.AddPolicy("HRManagerOnly", policy => policy
+    .RequireClaim("Department", "HR")
+    .RequireClaim("Manager")
+    .Requirements.Add(new HRManagerProbationRequirements(3))
+    ); 
 });
+
+builder.Services.AddSingleton<IAuthorizationHandler, HRManagerProbationRequirementsHandler>();
 builder.Services.AddRazorPages();
 
 

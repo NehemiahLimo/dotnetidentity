@@ -10,8 +10,10 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <None Remove="Pages\Account\" />
+    <None Remove="Authorization\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\Account\" />
+    <Folder Include="Authorization\" />
   </ItemGroup>
 </Project>
